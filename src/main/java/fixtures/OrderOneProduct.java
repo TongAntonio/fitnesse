@@ -27,4 +27,11 @@ public class OrderOneProduct {
         order.addItem(prod, quantity);
         return order.getTotal();
     }
+
+    public double Checkstock(){
+        Order order = new Order();
+        double num = order.getTotal() - this.quantity;
+        return num;
+    }
+
 }
